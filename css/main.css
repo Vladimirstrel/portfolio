@@ -1,0 +1,131 @@
+body {
+	font-family: 'Zilla Slab', serif;
+	background: #fff;
+	font-size: 18px;
+}
+img {
+	max-width: 100%;
+}
+.container {
+	max-width: 945px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.nav {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 30px;
+    border-bottom: 1px solid #828282;
+}
+.nav a {
+	text-decoration: none;
+	color: #828282;
+}
+.nav a:hover {
+	color: #070707;
+	font-weight: 700;
+}
+.about {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.lang {
+	height: 22px;
+    width: 65px;
+}
+.lang p {
+	margin: 0 auto;
+}
+.lang a {
+	text-decoration: none;
+	color: #828282;
+	font-weight: 700;
+	
+}
+.lang a:hover {
+	color: #070707;
+	font-weight: 700;
+}
+.about-section {
+	background-color: #F6F6F6;
+	margin: 0 auto;
+	padding: 100px 0px;
+}
+
+
+.container-programs {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+}
+
+
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: #070707;
+}
+.porfolio-img {
+	display:flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+.porfolio-fashion {
+	display: inline-block;
+	color: #070707;
+}
+
+.btn {
+	display: inline-block;
+    background: #070707;
+    border: 1px solid #070707;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 40px 0px;
+    color: #fff;
+}
+.social {
+	width: 385px;
+    display: inline-block;
+    align-items: center;
+}
+.social-footer {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	padding-left: 0;
+}
+@media all and (max-width: 568px){
+	.nav {
+		display: none;
+	}
+	.social {
+		max-width: 280px;
+	}
+	.container-programs {
+		display: block;
+		list-style: none;
+   		padding: 0;
+	}
+
+
+}
