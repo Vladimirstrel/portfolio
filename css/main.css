@@ -12,15 +12,18 @@ img {
     padding-right: 10px;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 60px;
+}
+.header{
+	padding-top: 30px;
 }
 .nav {
 	display: flex;
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    padding: 30px;
     border-bottom: 1px solid #828282;
+    padding-bottom: 30px;
+
 }
 .nav a {
 	text-decoration: none;
@@ -114,6 +117,9 @@ img {
 	justify-content: space-between;
 	padding-left: 0;
 }
+
+
+	
 @media all and (max-width: 568px){
 	.nav {
 		display: none;
@@ -126,6 +132,30 @@ img {
 		list-style: none;
    		padding: 0;
 	}
-
+	.name {
+		font-size: 14px;
+	}
+	.info {
+		font-size: 16px;
+	}
+	.lang {
+		font-size: 16px;
+	}
+ 
+	.menu-btn span {
+		display: block;
+		width: 19px;
+		height: 3px;
+		margin: 4px 0;
+		background: rgb(0,0,0);
+		z-index: 99;
+	}
+	.nav{
+		display: none;
+	}
+	.expand {
+ 		display: block !important;
+ 		text-align: left; 
+	}
 
 }
