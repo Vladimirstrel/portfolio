@@ -38,18 +38,29 @@ img {
 	justify-content: space-between;
 	align-items: center;
 }
-.lang {
-	height: 22px;
-    width: 65px;
+
+.lang{
+	list-style: none;
+    display: flex;
+    transform: rotate(270deg);
+    padding: 0px;
 }
-.lang p {
-	margin: 0 auto;
+.lang li{
+	padding: 0px 3px;
+}
+.lang li:first-child {
+	border-right: 3px solid;
 }
 .lang a {
 	text-decoration: none;
 	color: #828282;
 	font-weight: 700;
-	
+}
+.lang-mobile {
+	list-style: none;
+    display: flex;
+    transform: rotate(270deg);
+    padding: 0px;
 }
 .lang a:hover {
 	color: #070707;
@@ -94,6 +105,7 @@ img {
 .porfolio-fashion {
 	display: inline-block;
 	color: #070707;
+	padding-bottom: 40px;
 }
 
 .btn {
@@ -118,12 +130,43 @@ img {
 	padding-left: 0;
 }
 
+.visible-mobile {
+	display: none;
+}
 
+.visible-desktop {
+	display: flex;
+}
 	
 @media all and (max-width: 568px){
-	.nav {
+
+	.visible-mobile {
+     	display: flex;
+    	position: absolute;
+    	bottom: 110px;
+    	right: -20px;
+	}
+	.visible-mobile a {
+		font-size: 34px;
+	}
+
+	.visible-desktop {
 		display: none;
 	}
+	.nav-holder {
+		display: none;
+	}
+	.nav-mobile {
+		display: block;
+    	text-align: left;
+    	padding: 0px;
+    	font-size: 34px;
+    	border: none;
+	}
+	.nav-mobile li {
+		margin-bottom: 30px;
+	}
+	
 	.social {
 		max-width: 280px;
 	}
@@ -133,15 +176,22 @@ img {
    		padding: 0;
 	}
 	.name {
-		font-size: 14px;
+		font-size: 18px;
 	}
+
 	.info {
-		font-size: 16px;
+		font-size: 18px;
+		text-align: left;
 	}
 	.lang {
 		font-size: 16px;
 	}
- 
+	.about {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: baseline;
+    	flex-direction: column;
+ 	}
 	.menu-btn span {
 		display: block;
 		width: 19px;
@@ -150,12 +200,30 @@ img {
 		background: rgb(0,0,0);
 		z-index: 99;
 	}
-	.nav{
-		display: none;
-	}
+	
 	.expand {
  		display: block !important;
- 		text-align: left; 
+ 		padding: 0;
+    	position: absolute;
+   	 	background: white;
+    	width: 100%;
+    	height: 100%; 
+	}
+
+	.about-section{
+		padding: 5px 0px;
+	}
+
+	.porfolio-fashion {
+		padding-bottom: 10px;
+	}
+
+	.porfolio-img {
+		padding: 0px;
+	}
+
+	.btn {
+		margin: 0px;
 	}
 
 }
